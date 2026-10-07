@@ -2,315 +2,267 @@
 layout: default
 ---
 
-<!-- HERO -->
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
 <section class="hero">
-  <div class="hero-content">
-    <span class="hero-badge">BTS SIO · SISR</span>
 
-    <h1>
-      Mohamed-Amine<br>
-      <span>Aissaoui</span>
-    </h1>
-
-    <p class="hero-description">
-      Étudiant en informatique, passionné par les réseaux,
-      les systèmes et la cybersécurité.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-      <a href="#competences" class="btn btn-secondary">Mes compétences</a>
-    </div>
+  <div class="hero-label">
+    <span class="point"></span>
+    Portfolio professionnel
   </div>
 
-  <div class="hero-card">
-    <div class="terminal-top">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+  <h1>
+    {{ site.title }}
+  </h1>
 
-    <div class="terminal-content">
-      <p><span class="terminal-green">user</span>@portfolio:~$ whoami</p>
-      <p class="terminal-result">mohamed-amine</p>
-
-      <p><span class="terminal-green">user</span>@portfolio:~$ role</p>
-      <p class="terminal-result">Étudiant BTS SIO SISR</p>
-
-      <p><span class="terminal-green">user</span>@portfolio:~$ focus</p>
-      <p class="terminal-result">Réseaux · Systèmes · Cyber</p>
-
-      <p>
-        <span class="terminal-green">user</span>@portfolio:~$
-        <span class="cursor">_</span>
-      </p>
-    </div>
-  </div>
-</section>
-
-
-<!-- PROFIL -->
-<section class="section profile-section" id="profil">
-  <div class="section-heading">
-    <span class="section-number">01</span>
-    <div>
-      <p class="section-label">À PROPOS</p>
-      <h2>Qui suis-je ?</h2>
-    </div>
-  </div>
-
-  <div class="profile-grid">
-    <div class="profile-text">
-      <p>
-        Je suis <strong>Mohamed-Amine Aissaoui</strong>, étudiant en
-        <strong>BTS SIO option SISR</strong>.
-      </p>
-
-      <p>
-        Je m'intéresse particulièrement aux réseaux, aux systèmes
-        informatiques et à la cybersécurité. À travers mes projets,
-        je cherche à développer mes compétences techniques et à
-        mieux comprendre les infrastructures informatiques.
-      </p>
-
-      <p>
-        Mon objectif est de poursuivre mon parcours dans le domaine
-        de la <strong>cybersécurité</strong> et des infrastructures.
-      </p>
-    </div>
-
-    <div class="profile-stats">
-      <div class="stat-card">
-        <strong>BTS SIO</strong>
-        <span>SISR</span>
-      </div>
-
-      <div class="stat-card">
-        <strong>Réseaux</strong>
-        <span>Infrastructure</span>
-      </div>
-
-      <div class="stat-card">
-        <strong>Cyber</strong>
-        <span>Sécurité</span>
-      </div>
-
-      <div class="stat-card">
-        <strong>Linux</strong>
-        <span>Systèmes</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- COMPÉTENCES -->
-<section class="section" id="competences">
-  <div class="section-heading">
-    <span class="section-number">02</span>
-    <div>
-      <p class="section-label">EXPERTISE</p>
-      <h2>Mes compétences</h2>
-    </div>
-  </div>
-
-  <p class="section-intro">
-    Les compétences ci-dessous sont liées automatiquement aux projets
-    qui permettent de les démontrer.
+  <p class="hero-description">
+    {{ site.description }}
   </p>
 
-  <div class="skills-grid">
-    {% for c in site.data.competences %}
-      <div class="skill-card">
-        <div class="skill-icon">
-          {% if forloop.index == 1 %}
-            🌐
-          {% elsif forloop.index == 2 %}
-            🖥️
-          {% elsif forloop.index == 3 %}
-            🔐
-          {% elsif forloop.index == 4 %}
-            🐧
-          {% else %}
-            ⚙️
-          {% endif %}
-        </div>
+  <div class="hero-actions">
+    <a class="button button-primary" href="#projets">
+      Découvrir mes projets
+      <span>↓</span>
+    </a>
 
-        <h3>{{ c.libelle }}</h3>
-
-        <p>
-          Compétence développée à travers mes projets et mon parcours.
-        </p>
-      </div>
-    {% endfor %}
+    <a class="button button-secondary" href="#profil">
+      À propos
+    </a>
   </div>
+
 </section>
 
 
-<!-- PROJETS -->
-<section class="section projects-section" id="projets">
+<!-- =====================================================
+     INTRODUCTION
+     ===================================================== -->
+
+<section class="intro" id="profil">
+
+  <div class="section-number">
+    01 — PROFIL
+  </div>
+
+  <div class="intro-content">
+
+    <h2>
+      Construire,<br>
+      apprendre,<br>
+      évoluer.
+    </h2>
+
+    <div class="intro-text">
+
+      <p>
+        Ce portfolio présente mon parcours, mes réalisations
+        et les compétences développées au cours de ma formation.
+      </p>
+
+      <p>
+        <strong>Profil</strong><br>
+        Remplacez ce paragraphe par votre présentation :
+        votre formation, vos domaines d'intérêt, vos objectifs
+        professionnels et ce que vous souhaitez développer.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJETS
+     ===================================================== -->
+
+<section class="projects-section" id="projets">
+
+  <div class="section-heading">
+
+    <div class="section-number">
+      02 — PROJETS
+    </div>
+
+    <div>
+      <h2>Réalisations</h2>
+
+      <p>
+        Une sélection de projets réalisés au cours de ma formation.
+      </p>
+    </div>
+
+  </div>
+
 
   {% assign projets = site.projets | sort: "date" | reverse %}
-
-  <div class="section-heading">
-    <span class="section-number">03</span>
-    <div>
-      <p class="section-label">RÉALISATIONS</p>
-      <h2>Mes projets</h2>
-    </div>
-  </div>
-
-  <p class="section-intro">
-    Une sélection de projets réalisés durant mon parcours.
-  </p>
 
   <div class="projects-grid">
 
     {% for p in projets %}
 
-      <article class="project-card">
+    <article class="project-card">
 
-        <div class="project-top">
-          <span class="project-number">
-            {{ forloop.index | prepend: "0" | slice: -2, 2 }}
-          </span>
+      <div class="project-top">
 
-          <span class="project-date">
-            {{ p.date | date: "%m/%Y" }}
-          </span>
-        </div>
+        <span class="project-number">
+          {{ forloop.index | prepend: "0" }}
+        </span>
 
-        <div class="project-content">
+        <span class="project-date">
+          {{ p.date | date: "%m/%Y" }}
+        </span>
 
-          <h3>
-            <a href="{{ p.url | relative_url }}">
-              {{ p.title }}
-            </a>
-          </h3>
+      </div>
 
-          <p>
-            {{ p.resume }}
-          </p>
+      <div class="project-content">
 
-          <div class="project-footer">
-            <span>{{ p.cadre }}</span>
+        <h3>
+          <a href="{{ p.url | relative_url }}">
+            {{ p.title }}
+          </a>
+        </h3>
 
-            <a href="{{ p.url | relative_url }}" class="project-link">
-              Voir le projet →
-            </a>
-          </div>
+        <p class="project-description">
+          {{ p.resume }}
+        </p>
 
-        </div>
+      </div>
 
-      </article>
+      <div class="project-bottom">
+
+        <span>
+          {{ p.cadre }}
+        </span>
+
+        <a class="project-link" href="{{ p.url | relative_url }}">
+          Voir le projet
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </article>
 
     {% endfor %}
 
   </div>
+
 </section>
 
 
-<!-- COMPÉTENCES / PROJETS -->
-<section class="section matrix-section">
+<!-- =====================================================
+     COMPETENCES
+     ===================================================== -->
+
+<section class="skills-section" id="competences">
 
   <div class="section-heading">
-    <span class="section-number">04</span>
-    <div>
-      <p class="section-label">PORTFOLIO</p>
-      <h2>Tableau des compétences</h2>
+
+    <div class="section-number">
+      03 — COMPÉTENCES
     </div>
+
+    <div>
+      <h2>Compétences</h2>
+
+      <p>
+        Les compétences sont automatiquement associées
+        aux projets qui les démontrent.
+      </p>
+    </div>
+
   </div>
 
-  <p class="section-intro">
-    Chaque projet permet de démontrer certaines compétences.
-  </p>
 
-  <div class="matrix-wrapper">
+  <div class="skills-table-wrapper">
 
-    <table class="skills-table">
+    <div class="skills-table">
 
-      <thead>
-        <tr>
-          <th>Compétence</th>
+      <div class="skills-header">
 
-          {% for p in projets %}
-            <th>
-              <a href="{{ p.url | relative_url }}">
-                P{{ forloop.rindex }}
-              </a>
-            </th>
-          {% endfor %}
+        <div>Compétence</div>
 
-        </tr>
-      </thead>
+        {% for p in projets %}
 
-      <tbody>
-
-        {% for c in site.data.competences %}
-
-          <tr>
-
-            <th>{{ c.libelle }}</th>
-
-            {% for p in projets %}
-
-              <td>
-
-                {% if p.competences contains c.code %}
-
-                  <a
-                    href="{{ p.url | relative_url }}"
-                    class="check"
-                    aria-label="{{ c.libelle }} : {{ p.title }}"
-                  >
-                    ✓
-                  </a>
-
-                {% else %}
-
-                  <span class="empty-check">—</span>
-
-                {% endif %}
-
-              </td>
-
-            {% endfor %}
-
-          </tr>
+        <div>
+          <a href="{{ p.url | relative_url }}">
+            P{{ forloop.rindex }}
+          </a>
+        </div>
 
         {% endfor %}
 
-      </tbody>
+      </div>
 
-    </table>
+
+      {% for c in site.data.competences %}
+
+      <div class="skill-row">
+
+        <div class="skill-name">
+          {{ c.libelle }}
+        </div>
+
+        {% for p in projets %}
+
+        <div class="skill-case">
+
+          {% if p.competences contains c.code %}
+
+          <a
+            href="{{ p.url | relative_url }}"
+            aria-label="{{ c.libelle }} : {{ p.title }}"
+          >
+            ✓
+          </a>
+
+          {% else %}
+
+          <span>—</span>
+
+          {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+      {% endfor %}
+
+    </div>
 
   </div>
 
 </section>
 
 
-<!-- CONTACT -->
-<section class="contact-section">
+<!-- =====================================================
+     FIN / CTA
+     ===================================================== -->
 
-  <div class="contact-content">
+<section class="closing">
 
-    <span class="section-label">CONTACT</span>
+  <div class="closing-line"></div>
+
+  <div class="closing-content">
+
+    <span class="section-number">
+      04 — FIN
+    </span>
 
     <h2>
-      Construisons quelque chose<br>
-      <span>ensemble.</span>
+      Merci pour votre<br>
+      visite.
     </h2>
 
     <p>
-      Vous souhaitez échanger avec moi à propos d'un projet,
-      de mon parcours ou d'une opportunité ?
+      Découvrez les différents projets pour en savoir davantage
+      sur mon parcours et les compétences que j'ai développées.
     </p>
-
-    {% if site.email != "" %}
-      <a href="mailto:{{ site.email }}" class="btn btn-primary">
-        Me contacter →
-      </a>
-    {% endif %}
 
   </div>
 
