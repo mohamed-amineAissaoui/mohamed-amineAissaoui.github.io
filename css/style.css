@@ -1,5 +1,5 @@
 /* =========================================================
-   PORTFOLIO — DARK CORPORATE
+   PORTFOLIO — DARK CORPORATE / REFINED
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
@@ -11,15 +11,15 @@
 
 :root {
 
-  --black: #070707;
-  --black-soft: #0c0c0c;
-  --surface: #111111;
+  --black: #080808;
+  --black-soft: #0d0d0d;
+  --surface: #121212;
 
-  --white: #f4f4ef;
-  --white-soft: #d2d2cc;
+  --white: #f2f2ee;
+  --white-soft: #d0d0cb;
 
-  --grey: #878781;
-  --grey-light: #a3a39d;
+  --grey: #858580;
+  --grey-light: #a2a29c;
 
   --border: #242424;
   --border-light: #343434;
@@ -63,14 +63,14 @@ body {
 
 
 /* =========================================================
-   LARGE STRUCTURE
+   STRUCTURE
    ========================================================= */
 
 header,
 main,
 footer {
 
-  width: min(1180px, calc(100% - 64px));
+  width: min(1120px, calc(100% - 56px));
 
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +84,7 @@ footer {
 
 header {
 
-  min-height: 88px;
+  min-height: 84px;
 
   display: flex;
 
@@ -93,7 +93,7 @@ header {
 
   border-bottom: 1px solid var(--border);
 
-  animation: fadeDown 0.8s ease both;
+  animation: fadeDown 0.7s ease both;
 
 }
 
@@ -102,7 +102,7 @@ header {
 
   margin: 0;
 
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 
   letter-spacing: 0.08em;
@@ -138,7 +138,7 @@ nav ul {
 
   align-items: center;
 
-  gap: 34px;
+  gap: 28px;
 
   margin: 0;
   padding: 0;
@@ -154,7 +154,7 @@ nav a {
 
   color: var(--grey);
 
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
 
   text-decoration: none;
@@ -171,7 +171,7 @@ nav a::after {
   position: absolute;
 
   left: 0;
-  bottom: -8px;
+  bottom: -7px;
 
   width: 0;
   height: 1px;
@@ -198,7 +198,7 @@ nav a:hover::after {
 
 .hero {
 
-  min-height: 720px;
+  min-height: 590px;
 
   display: flex;
 
@@ -206,7 +206,7 @@ nav a:hover::after {
 
   justify-content: center;
 
-  padding: 100px 0 120px;
+  padding: 75px 0 90px;
 
   border-bottom: 1px solid var(--border);
 
@@ -219,69 +219,74 @@ nav a:hover::after {
 
   align-items: center;
 
-  gap: 10px;
+  gap: 9px;
 
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 
   color: var(--grey);
 
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
 
-  letter-spacing: 0.16em;
+  letter-spacing: 0.15em;
 
   text-transform: uppercase;
 
-  animation: fadeUp 0.8s ease both;
+  animation: fadeUp 0.7s ease both;
 
 }
 
 
 .hero-dot {
 
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
 
   border-radius: 50%;
 
   background: var(--white);
 
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px rgba(255,255,255,0.25);
 
 }
 
 
 .hero h1 {
+
   max-width: 900px;
-  margin: 0 0 24px;
+
+  margin: 0 0 22px;
 
   color: var(--white);
 
   font-family: "Playfair Display", Georgia, serif;
 
-  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-size: clamp(3.2rem, 7vw, 6.3rem);
+
   font-weight: 500;
 
   line-height: 0.98;
+
   letter-spacing: -0.045em;
 
-  animation: fadeUp 0.9s ease 0.08s both;
+  animation: fadeUp 0.8s ease 0.08s both;
+
 }
 
 
 .hero-description {
 
-  max-width: 680px;
+  max-width: 620px;
 
   margin: 0;
 
   color: var(--grey);
 
-  font-size: 18px;
+  font-size: 16px;
 
   line-height: 1.75;
 
-  animation: fadeUp 0.9s ease 0.16s both;
+  animation: fadeUp 0.8s ease 0.16s both;
 
 }
 
@@ -294,11 +299,11 @@ nav a:hover::after {
 
   display: flex;
 
-  gap: 14px;
+  gap: 12px;
 
-  margin-top: 40px;
+  margin-top: 34px;
 
-  animation: fadeUp 0.9s ease 0.24s both;
+  animation: fadeUp 0.8s ease 0.24s both;
 
 }
 
@@ -308,14 +313,13 @@ nav a:hover::after {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: space-between;
 
-  gap: 28px;
+  gap: 22px;
 
-  min-width: 190px;
+  min-width: 175px;
 
-  padding: 14px 18px;
+  padding: 13px 17px;
 
   font-size: 12px;
   font-weight: 600;
@@ -373,7 +377,7 @@ nav a:hover::after {
 
 
 /* =========================================================
-   SECTION LABELS
+   SECTION LABEL
    ========================================================= */
 
 .section-label {
@@ -383,7 +387,7 @@ nav a:hover::after {
   font-size: 10px;
   font-weight: 600;
 
-  letter-spacing: 0.16em;
+  letter-spacing: 0.15em;
 
   text-transform: uppercase;
 
@@ -396,7 +400,7 @@ nav a:hover::after {
 
 .profile-section {
 
-  padding: 130px 0;
+  padding: 95px 0;
 
   border-bottom: 1px solid var(--border);
 
@@ -409,9 +413,9 @@ nav a:hover::after {
 
   grid-template-columns: 1fr 1fr;
 
-  gap: 110px;
+  gap: 90px;
 
-  margin-top: 45px;
+  margin-top: 38px;
 
 }
 
@@ -424,33 +428,33 @@ nav a:hover::after {
 
   font-family: "Playfair Display", Georgia, serif;
 
-  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-size: clamp(2.7rem, 5vw, 4.5rem);
 
   font-weight: 500;
 
-  line-height: 0.98;
+  line-height: 1;
 
-  letter-spacing: -0.045em;
+  letter-spacing: -0.04em;
 
 }
 
 
 .profile-text {
 
-  max-width: 540px;
+  max-width: 520px;
 
-  padding-top: 8px;
+  padding-top: 4px;
 
 }
 
 
 .profile-text p {
 
-  margin: 0 0 24px;
+  margin: 0 0 22px;
 
   color: var(--grey);
 
-  font-size: 16px;
+  font-size: 15px;
 
 }
 
@@ -459,7 +463,7 @@ nav a:hover::after {
 
   color: var(--white-soft);
 
-  font-size: 19px;
+  font-size: 17px;
 
   line-height: 1.75;
 
@@ -467,59 +471,61 @@ nav a:hover::after {
 
 
 /* =========================================================
-   SECTION HEADING
+   TITRE DE SECTION
    ========================================================= */
 
 .section-heading {
 
   display: grid;
 
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 160px 1fr;
 
-  gap: 45px;
+  gap: 38px;
 
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 
 }
 
 
 .section-heading-content h2 {
 
-  margin: 0 0 18px;
+  margin: 0 0 15px;
 
   color: var(--white);
 
   font-family: "Playfair Display", Georgia, serif;
 
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.7rem, 5vw, 4.4rem);
 
   font-weight: 500;
 
-  line-height: 0.98;
+  line-height: 1;
 
-  letter-spacing: -0.045em;
+  letter-spacing: -0.04em;
 
 }
 
 
 .section-heading-content p {
 
-  max-width: 570px;
+  max-width: 560px;
 
   margin: 0;
 
   color: var(--grey);
 
+  font-size: 15px;
+
 }
 
 
 /* =========================================================
-   PROJECT SECTION
+   RÉALISATIONS
    ========================================================= */
 
 .projects-section {
 
-  padding: 130px 0;
+  padding: 95px 0;
 
   border-bottom: 1px solid var(--border);
 
@@ -542,16 +548,16 @@ nav a:hover::after {
 
 
 /* =========================================================
-   PROJECT CARD
+   CARTE PROJET
    ========================================================= */
 
 .network-project {
 
   display: grid;
 
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.08fr 0.92fr;
 
-  min-height: 560px;
+  min-height: 450px;
 
   background: var(--black);
 
@@ -560,22 +566,18 @@ nav a:hover::after {
 
 .network-project-reverse {
 
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 0.92fr 1.08fr;
 
 }
 
 
 .network-project-reverse .network-visual {
-
   order: 2;
-
 }
 
 
 .network-project-reverse .network-content {
-
   order: 1;
-
 }
 
 
@@ -591,7 +593,7 @@ nav a:hover::after {
 
   justify-content: center;
 
-  padding: 42px;
+  padding: 30px;
 
   background: var(--black-soft);
 
@@ -615,31 +617,29 @@ nav a:hover::after {
 
   width: 100%;
 
-  max-height: 500px;
+  max-height: 430px;
 
   object-fit: contain;
 
   border: none;
 
-  transition: transform 0.55s ease;
+  transition: transform 0.5s ease;
 
 }
 
 
 .network-project:hover .network-image-frame img {
-
-  transform: scale(1.025);
-
+  transform: scale(1.02);
 }
 
 
 .image-caption {
 
-  margin: 13px 0 0;
+  margin: 12px 0 0;
 
   color: var(--grey);
 
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
 
   letter-spacing: 0.08em;
@@ -650,7 +650,7 @@ nav a:hover::after {
 
 
 /* =========================================================
-   PROJECT CONTENT
+   CONTENU PROJET
    ========================================================= */
 
 .network-content {
@@ -661,7 +661,7 @@ nav a:hover::after {
 
   justify-content: center;
 
-  padding: 60px;
+  padding: 45px;
 
 }
 
@@ -676,9 +676,9 @@ nav a:hover::after {
 
   gap: 20px;
 
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 
-  padding-bottom: 18px;
+  padding-bottom: 15px;
 
   border-bottom: 1px solid var(--border);
 
@@ -691,7 +691,7 @@ nav a:hover::after {
 
   font-family: "Playfair Display", Georgia, serif;
 
-  font-size: 34px;
+  font-size: 28px;
 
   line-height: 1;
 
@@ -702,44 +702,44 @@ nav a:hover::after {
 
   color: var(--grey);
 
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
 
-  letter-spacing: 0.12em;
+  letter-spacing: 0.11em;
 
 }
 
 
 .network-content h3 {
 
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 
   color: var(--white);
 
   font-family: "Playfair Display", Georgia, serif;
 
-  font-size: clamp(2.4rem, 4vw, 4.1rem);
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
 
   font-weight: 500;
 
-  line-height: 1;
+  line-height: 1.03;
 
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
 
 }
 
 
 .project-description {
 
-  max-width: 500px;
+  max-width: 480px;
 
   margin: 0;
 
   color: var(--grey);
 
-  font-size: 15px;
+  font-size: 14px;
 
-  line-height: 1.85;
+  line-height: 1.8;
 
 }
 
@@ -754,7 +754,7 @@ nav a:hover::after {
 
 
 /* =========================================================
-   PROJECT INFORMATION
+   INFOS PROJET
    ========================================================= */
 
 .project-info {
@@ -765,7 +765,7 @@ nav a:hover::after {
 
   gap: 1px;
 
-  margin-top: 48px;
+  margin-top: 38px;
 
   background: var(--border);
 
@@ -780,9 +780,9 @@ nav a:hover::after {
 
   flex-direction: column;
 
-  gap: 5px;
+  gap: 4px;
 
-  padding: 16px;
+  padding: 14px;
 
   background: var(--black);
 
@@ -793,10 +793,10 @@ nav a:hover::after {
 
   color: var(--grey);
 
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 600;
 
-  letter-spacing: 0.12em;
+  letter-spacing: 0.11em;
 
   text-transform: uppercase;
 
@@ -807,7 +807,7 @@ nav a:hover::after {
 
   color: var(--white);
 
-  font-size: 13px;
+  font-size: 12px;
 
   font-weight: 500;
 
@@ -820,7 +820,7 @@ nav a:hover::after {
 
 .skills-section {
 
-  padding: 130px 0;
+  padding: 95px 0;
 
   border-bottom: 1px solid var(--border);
 
@@ -840,11 +840,11 @@ table {
 
   width: 100%;
 
-  min-width: 650px;
+  min-width: 620px;
 
   border-collapse: collapse;
 
-  font-size: 13px;
+  font-size: 12px;
 
 }
 
@@ -852,7 +852,7 @@ table {
 th,
 td {
 
-  padding: 15px 16px;
+  padding: 13px 15px;
 
   border-right: 1px solid var(--border);
 
@@ -871,11 +871,10 @@ thead th {
 
   background: var(--surface);
 
-  font-size: 10px;
-
+  font-size: 9px;
   font-weight: 600;
 
-  letter-spacing: 0.09em;
+  letter-spacing: 0.08em;
 
   text-transform: uppercase;
 
@@ -922,30 +921,30 @@ tbody td {
 
   text-decoration: none;
 
-  font-size: 15px;
+  font-size: 14px;
 
-  transition: opacity 0.25s ease;
+  transition: opacity 0.2s ease;
 
 }
 
 
 .skill-case a:hover {
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 
 .skill-case span {
-  color: #555550;
+  color: #50504c;
 }
 
 
 /* =========================================================
-   CLOSING
+   CONCLUSION
    ========================================================= */
 
 .closing-section {
 
-  padding: 150px 0 170px;
+  padding: 110px 0 125px;
 
 }
 
@@ -956,7 +955,7 @@ tbody td {
 
   height: 1px;
 
-  margin-bottom: 70px;
+  margin-bottom: 55px;
 
   background: var(--border);
 
@@ -967,41 +966,41 @@ tbody td {
 
   display: grid;
 
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 160px 1fr;
 
-  gap: 45px;
+  gap: 38px;
 
 }
 
 
 .closing-grid h2 {
 
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 
   color: var(--white);
 
   font-family: "Playfair Display", Georgia, serif;
 
-  font-size: clamp(3.4rem, 7vw, 7rem);
+  font-size: clamp(2.8rem, 5.5vw, 5.4rem);
 
   font-weight: 500;
 
-  line-height: 0.94;
+  line-height: 0.98;
 
-  letter-spacing: -0.05em;
+  letter-spacing: -0.045em;
 
 }
 
 
 .closing-grid p {
 
-  max-width: 550px;
+  max-width: 520px;
 
   margin: 0;
 
   color: var(--grey);
 
-  font-size: 16px;
+  font-size: 15px;
 
 }
 
@@ -1012,9 +1011,9 @@ tbody td {
 
 footer {
 
-  padding-top: 28px;
+  padding-top: 25px;
 
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 
   border-top: 1px solid var(--border);
 
@@ -1031,7 +1030,7 @@ footer a {
 
   text-decoration: none;
 
-  transition: color 0.25s ease;
+  transition: color 0.2s ease;
 
 }
 
@@ -1051,7 +1050,7 @@ footer a:hover {
 
     opacity: 0;
 
-    transform: translateY(24px);
+    transform: translateY(18px);
 
   }
 
@@ -1072,7 +1071,7 @@ footer a:hover {
 
     opacity: 0;
 
-    transform: translateY(-14px);
+    transform: translateY(-12px);
 
   }
 
@@ -1097,7 +1096,7 @@ footer a:hover {
   main,
   footer {
 
-    width: min(100% - 36px, 1180px);
+    width: min(100% - 36px, 1120px);
 
   }
 
@@ -1106,7 +1105,7 @@ footer a:hover {
 
     grid-template-columns: 1fr;
 
-    gap: 45px;
+    gap: 40px;
 
   }
 
@@ -1115,7 +1114,7 @@ footer a:hover {
 
     grid-template-columns: 1fr;
 
-    gap: 18px;
+    gap: 15px;
 
   }
 
@@ -1129,29 +1128,25 @@ footer a:hover {
 
 
   .network-project-reverse .network-visual {
-
     order: 1;
-
   }
 
 
   .network-project-reverse .network-content {
-
     order: 2;
-
   }
 
 
   .network-visual {
 
-    padding: 28px;
+    padding: 24px;
 
   }
 
 
   .network-content {
 
-    padding: 45px 28px 50px;
+    padding: 38px 24px 42px;
 
   }
 
@@ -1160,7 +1155,7 @@ footer a:hover {
 
     grid-template-columns: 1fr;
 
-    gap: 24px;
+    gap: 20px;
 
   }
 
@@ -1173,20 +1168,20 @@ footer a:hover {
 
     min-height: auto;
 
-    padding: 24px 0;
+    padding: 22px 0;
 
     align-items: flex-start;
 
     flex-direction: column;
 
-    gap: 18px;
+    gap: 15px;
 
   }
 
 
   nav ul {
 
-    gap: 18px;
+    gap: 16px;
 
     flex-wrap: wrap;
 
@@ -1195,16 +1190,23 @@ footer a:hover {
 
   .hero {
 
-    min-height: 600px;
+    min-height: 520px;
 
-    padding: 75px 0 90px;
+    padding: 65px 0 75px;
 
   }
 
 
   .hero h1 {
 
-    font-size: clamp(3.4rem, 15vw, 6rem);
+    font-size: clamp(3rem, 14vw, 5rem);
+
+  }
+
+
+  .hero-description {
+
+    font-size: 15px;
 
   }
 
@@ -1215,7 +1217,7 @@ footer a:hover {
 
     flex-direction: column;
 
-    max-width: 280px;
+    max-width: 275px;
 
   }
 
@@ -1231,14 +1233,14 @@ footer a:hover {
   .projects-section,
   .skills-section {
 
-    padding: 90px 0;
+    padding: 75px 0;
 
   }
 
 
   .network-content h3 {
 
-    font-size: 2.7rem;
+    font-size: 2.5rem;
 
   }
 
@@ -1252,7 +1254,7 @@ footer a:hover {
 
   .closing-section {
 
-    padding: 100px 0;
+    padding: 80px 0 100px;
 
   }
 
@@ -1272,21 +1274,14 @@ footer a:hover {
 
   .network-visual {
 
-    padding: 16px;
+    padding: 14px;
 
   }
 
 
   .network-content {
 
-    padding: 35px 20px 40px;
-
-  }
-
-
-  .project-meta {
-
-    margin-bottom: 32px;
+    padding: 30px 18px 35px;
 
   }
 
